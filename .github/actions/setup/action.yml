@@ -1,0 +1,11 @@
+name: 'Setup'
+description: 'Setup pnpm and node runtime'
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup pnpm
+      uses: pnpm/setup@84cb39b217b10273981911c288cd62326dc7c6d2 # v2.0.2
+      with:
+        runtime: node@24
+        cache: true
+        install: true

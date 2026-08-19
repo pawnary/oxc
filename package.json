@@ -1,0 +1,54 @@
+{
+  "name": "Pawnary 0xc",
+  "version": "0.0.0",
+  "private": true,
+  "keywords": [
+    "compiler",
+    "formatter",
+    "javascript",
+    "linter",
+    "oxc",
+    "parser",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Elvis Muñoz <elvis.munoz.f@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "changeset": "changeset",
+    "changeset:publish": "pnpm build && changeset publish",
+    "changeset:version": "changeset version",
+    "clean": "git clean -dfqX -- packages/**/dist node_modules packages/**/node_modules",
+    "fmt": "oxfmt --check",
+    "fmt:fix": "oxfmt --write",
+    "lint": "oxlint",
+    "lint-staged": "lint-staged",
+    "lint:fix": "oxlint --fix",
+    "prepare": "husky",
+    "test": "vitest",
+    "test:ci": "vitest --run",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@changesets/cli": "catalog:",
+    "@pawnary/tsdown-fix-exports": "catalog:",
+    "@types/node": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
+    "publint": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.21.0",
+      "onFail": "download"
+    }
+  }
+}

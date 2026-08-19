@@ -1,0 +1,18 @@
+packages:
+  - packages/*
+minimumReleaseAgeExclude:
+  - '@pawnary/*'
+catalogMode: prefer
+catalog:
+  '@changesets/cli': ^3.0.0
+  '@pawnary/tsdown-fix-exports': 0.0.1-next.0
+  '@types/node': ^26.2.0
+  husky: ^9.1.7
+  lint-staged: ^17.3.0
+  oxfmt: ^0.63.0
+  oxlint: ^1.78.0
+  oxlint-tsgolint: ^7.0.2001
+  publint: ^0.3.23
+  tsdown: ^0.22.14
+  typescript: ^7.0.2
+  vitest: ^4.1.10

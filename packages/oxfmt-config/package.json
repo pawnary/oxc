@@ -1,0 +1,45 @@
+{
+  "name": "@pawnary/oxfmt-config",
+  "version": "0.0.0",
+  "description": "Oxfmt configurations used by Pawnary",
+  "homepage": "https://github.com/pawnary/oxc/tree/master/packages/oxfmt-config#readme",
+  "bugs": {
+    "url": "https://github.com/pawnary/oxc/issues"
+  },
+  "license": "MIT",
+  "author": "Elvis Muñoz <elvis.munoz.f@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawnary/oxc.git"
+  },
+  "files": [
+    "./dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/cjs/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.cjs"
+    },
+    "./defaultConfig": {
+      "import": "./dist/esm/defaultConfig.mjs",
+      "require": "./dist/cjs/defaultConfig.cjs"
+    },
+    "./defineConfig": {
+      "import": "./dist/esm/defineConfig.mjs",
+      "require": "./dist/cjs/defineConfig.cjs"
+    },
+    "./types": {
+      "import": "./dist/esm/types.mjs",
+      "require": "./dist/cjs/types.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "oxfmt": "catalog:"
+  }
+}
