@@ -8,8 +8,10 @@ on:
       - .vscode/**
 jobs:
   publish:
+    name: 'Publish master branch to NPM and GitHub Packages'
     permissions:
       id-token: write
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
