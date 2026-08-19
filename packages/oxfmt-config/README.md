@@ -1,3 +1,9 @@
+<!-- prettier-ignore-start -->
+> [!WARNING]
+> This is a Work In Progress, and the API is not stable yet. Breaking changes
+> may be introduced at any time.
+<!-- prettier-ignore-end -->
+
 # `@pawnary/oxfmt-config`
 
 Shared [Oxfmt](https://oxc.rs) configuration used across Pawnary projects.
