@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "oxlint": "catalog:",
-    "oxlint-tsgolint": "catalog:"
+    "oxlint-tsgolint": "catalog:",
+    "typescript": "catalog:"
   }
 }
