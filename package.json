@@ -28,7 +28,8 @@
     "prepare": "husky",
     "test": "vitest",
     "test:ci": "vitest --run",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "watch": "tsdown --watch"
   },
   "devDependencies": {
     "@changesets/cli": "catalog:",
