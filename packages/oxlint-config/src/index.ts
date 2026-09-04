@@ -46,7 +46,11 @@ const defaultConfig: PawnaryOxlintConfig = {
   rules: {
     'capitalized-comments': 'off',
     'class-methods-use-this': 'off',
-    'eslint/func-style': ['error', 'declaration'],
+    'eslint/func-style': [
+      'error',
+      'declaration',
+      { allowArrowFunctions: true },
+    ],
     'eslint/init-declarations': 'off',
     'eslint/max-params': ['error', { max: 4 }],
     'eslint/no-console': 'warn',
@@ -59,6 +63,11 @@ const defaultConfig: PawnaryOxlintConfig = {
     'eslint/one-var': 'off',
     'eslint/prefer-destructuring': 'off',
     'import/consistent-type-specifier-style': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      { checkTypeImports: true },
+    ],
     'import/group-exports': 'off',
     'import/max-dependencies': 'off',
     'import/no-default-export': 'off',
@@ -104,6 +113,7 @@ const defaultConfig: PawnaryOxlintConfig = {
     'unicorn/no-new-array': 'off',
     'unicorn/no-null': 'off',
     'unicorn/number-literal-case': 'off', // https://github.com/oxc-project/oxc/issues/21949
+    'unicorn/prefer-global-this': 'error',
     'unicorn/prefer-ternary': 'off',
   },
 } as const;
