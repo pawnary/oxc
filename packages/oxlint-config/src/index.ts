@@ -59,7 +59,11 @@ const defaultConfig: PawnaryOxlintConfig = {
     'eslint/no-magic-numbers': 'off',
     'eslint/no-plusplus': 'off',
     'eslint/no-undefined': 'off',
-    'eslint/no-warning-comments': 'warn',
+    'eslint/no-unused-vars': 'warn',
+    'eslint/no-warning-comments': [
+      'warn',
+      { location: 'start', terms: ['fixme', 'xxx'] },
+    ],
     'eslint/one-var': 'off',
     'eslint/prefer-destructuring': 'off',
     'import/consistent-type-specifier-style': 'off',
