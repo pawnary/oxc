@@ -21,6 +21,7 @@ const defaultConfig: PawnaryOxlintConfig = {
       files: ['**/*.spec.ts'],
       plugins: ['vitest'],
       rules: {
+        'eslint/max-lines': 'off',
         'typescript/no-unnecessary-condition': 'off',
         'typescript/no-unsafe-assignment': 'off',
         'vitest/consistent-test-filename': [
